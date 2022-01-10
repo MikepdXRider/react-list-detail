@@ -3,3 +3,13 @@
 // Hosts state, makes calls to API, passes props and functions to presentational components.
 // Accesses id in param passed from list view.
 // Displays selected list item details.
+
+import React from 'react'
+
+export default function Details() {
+    return (
+        <div>
+            Details!
+        </div>
+    )
+}
