@@ -13,7 +13,7 @@ export default function DetailCard({ name, photoUrl, hair, weapon, affiliation, 
             <p>Hair: {hair}</p>
             <p>Weapon: {weapon}</p>
             <p>Profession: {profession}</p>
-            <p>First: {first.length ? first : 'None'}</p>
+            <p>First: {first !== '"' ? first : 'N/A'}</p>
         </article>
     )
 }
