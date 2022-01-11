@@ -4,12 +4,33 @@
 // Accesses id in param passed from list view.
 // Displays selected list item details.
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
+import { getCharacterById } from '../../services/avatar.js';
 
 export default function Details() {
+    const [character, setCharacter] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
+
+    const {id} = useParams();
+
+    useEffect(() => {
+        async function fetchCharacter(){
+            const res = await getCharacterById(id);
+            setCharacter({...res});
+            setIsLoading(false);
+        }
+
+        fetchCharacter();
+    }, [])
+
     return (
-        <div>
-            Details!
-        </div>
+        <>
+            {
+                isLoading
+                ? <h3>Loading...</h3>
+                : <p>{JSON.stringify(character)}</p>
+            }        
+        </>
     )
 }

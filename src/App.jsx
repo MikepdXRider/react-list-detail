@@ -9,14 +9,14 @@ export default function App() {
     <BrowserRouter>
       <Switch>
 
-        <Route path='/details'>
+        <Route path='/details/:id'>
           <Details />
         </Route>
 
         <Route exact path='/'>
           <List />
         </Route>
-        
+
       </Switch>
     </BrowserRouter>
   )
