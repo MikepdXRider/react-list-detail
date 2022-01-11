@@ -3,17 +3,23 @@
 // Displays selected list item details.
 
 import React from 'react'
+import styles from './DetailCard.css'
+import DetailPill from './DetailPill.jsx'
 
 export default function DetailCard({ name, photoUrl, hair, weapon, affiliation, profession, first }) {
     return (
-        <article>
-            <h3>{name}</h3>
-            <img src={`${photoUrl}`} alt={`${name}`} />
-            <p>Affiliation: {affiliation}</p>
-            <p>Hair: {hair}</p>
-            <p>Weapon: {weapon}</p>
-            <p>Profession: {profession}</p>
-            <p>First: {first !== '"' ? first : 'N/A'}</p>
-        </article>
+        <section className={styles.detailsContainer}>
+            <img className={styles.detailsImage} src={`${photoUrl}`} alt={`${name}`} />
+            <div className={styles.detailsContChild}>
+                <DetailPill title='name' content={name}/>
+                <DetailPill title='prof' content={profession}/>
+                <DetailPill title='affiliation' content={affiliation}/>
+            </div>
+            <div className={styles.detailsContChild}>
+                <DetailPill title='weapon' content={weapon}/>
+                <DetailPill title='hair' content={hair}/>
+                <DetailPill title='first seen' content={first}/>
+            </div>
+        </section>
     )
 }

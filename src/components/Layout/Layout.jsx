@@ -5,7 +5,8 @@ export default function Layout({children}) {
         <>
             <header>
                 {/* Maybe a little  */}
-                <h1>Avatar List and Details</h1>
+                <h1>Avatar</h1>
+                <p>The Last Airbender</p>
             </header>
             <main>
                 {children}
