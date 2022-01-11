@@ -6,9 +6,12 @@
 // This should navigate the user to a detail view
 
 import React, { useEffect, useState } from 'react'
+import { useHistory } from 'react-router-dom';
+import ListItem from '../../components/ListItem/ListItem.jsx';
 import { getCharacters } from '../../services/avatar.js';
 
 export default function List() {
+    const history = useHistory();
     const [characters, setCharacters] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -20,14 +23,35 @@ export default function List() {
         }
 
         fetchCharacters();
-    }, [])
+    }, []);
+
+    /**
+     * Used for
+     * @param {event} e 
+     */
+    async function onClick(charId) {
+        history.push(`/details/${charId}`);
+    }
 
     return (
         <>
             {
                 isLoading
                 ? <h3>Loading...</h3>
-                : <p>{JSON.stringify(characters)}</p>
+                : <ul>
+                    {
+                        characters.map(character => <li key={character.charId}>
+                            <ListItem 
+                            charName={character.charName}
+                            charId={character.charId}
+                            charPhoto={character.charPhoto}
+                            charAff={character.charAffiliation}
+                            onClick={onClick}
+                            />
+                        </li>
+                        )
+                    }
+                </ul>
             }        
         </>
     )
