@@ -3,7 +3,7 @@
 // Displays selected list item details.
 
 import React from 'react'
-import styles from './DetailCard.css'
+import styles from './Details.css'
 import DetailPill from './DetailPill.jsx'
 
 export default function DetailCard({ name, photoUrl, hair, weapon, affiliation, profession, first }) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './DetailCard.css'
+import styles from './Details.css'
 
 export default function DetailPill({title, content}) {
     return (
