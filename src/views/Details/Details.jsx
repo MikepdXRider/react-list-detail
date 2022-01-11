@@ -6,6 +6,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import DetailCard from '../../components/Details/DetailCard.jsx';
 import { getCharacterById } from '../../services/avatar.js';
 
 export default function Details() {
@@ -29,7 +30,11 @@ export default function Details() {
             {
                 isLoading
                 ? <h3>Loading...</h3>
-                : <p>{JSON.stringify(character)}</p>
+                : <section>
+                    <DetailCard 
+                    {...character}
+                    />
+                </section>
             }        
         </>
     )

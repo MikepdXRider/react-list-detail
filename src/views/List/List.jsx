@@ -40,15 +40,16 @@ export default function List() {
                 ? <h3>Loading...</h3>
                 : <ul>
                     {
-                        characters.map(character => <li key={character.charId}>
-                            <ListItem 
-                            charName={character.charName}
-                            charId={character.charId}
-                            charPhoto={character.charPhoto}
-                            charAff={character.charAffiliation}
-                            onClick={onClick}
-                            />
-                        </li>
+                        characters.map(character => 
+                            <li key={character.charId}>
+                                <ListItem 
+                                charName={character.charName}
+                                charId={character.charId}
+                                charPhoto={character.charPhoto}
+                                charAff={character.charAffiliation}
+                                onClick={onClick}
+                                />
+                            </li>
                         )
                     }
                 </ul>
