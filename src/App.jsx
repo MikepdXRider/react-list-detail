@@ -9,7 +9,6 @@ import './App.css'
 export default function App() {
   return (
     <Layout>
-      <BrowserRouter>
         <Switch>
 
           <Route path='/details/:id'>
@@ -21,7 +20,6 @@ export default function App() {
           </Route>
 
         </Switch>
-      </BrowserRouter>
     </Layout>
   )
   }

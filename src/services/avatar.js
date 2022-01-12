@@ -7,7 +7,7 @@ import fetch from "cross-fetch";
     
 export async function getCharacters() {
     try{
-        const res = await fetch(`${process.env.API_URL}`)
+        const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/`)
         const characters = await res.json();
         return characters.map(character => {
             return {
@@ -25,7 +25,7 @@ export async function getCharacters() {
 
 export async function getCharacterById(character_id) {
     try{
-        const res = await fetch(`${process.env.API_URL}/${character_id}`);
+        const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${character_id}`);
         return res.json();
     } catch (err) {
         console.log(err);
