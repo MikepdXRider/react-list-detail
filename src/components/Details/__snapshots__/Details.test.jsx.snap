@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`details presentational component snapshots detail card snapshot 1`] = `
+<div>
+  <section
+    class="detailsContainer"
+  >
+    <img
+      alt="test-name"
+      class="detailsImage"
+      src="test-photo"
+    />
+    <div
+      class="detailsContChild"
+    >
+      <div
+        class="pillContainer"
+      >
+        <div
+          class="pillText pillTitleArea"
+        >
+          NAME
+        </div>
+        <div
+          class="pillText pillContentArea"
+        >
+          test-name
+        </div>
+      </div>
+      <div
+        class="pillContainer"
+      >
+        <div
+          class="pillText pillTitleArea"
+        >
+          PROF
+        </div>
+        <div
+          class="pillText pillContentArea"
+        >
+          test-profession
+        </div>
+      </div>
+      <div
+        class="pillContainer"
+      >
+        <div
+          class="pillText pillTitleArea"
+        >
+          AFFILIATION
+        </div>
+        <div
+          class="pillText pillContentArea"
+        >
+          test-affilitation
+        </div>
+      </div>
+    </div>
+    <div
+      class="detailsContChild"
+    >
+      <div
+        class="pillContainer"
+      >
+        <div
+          class="pillText pillTitleArea"
+        >
+          WEAPON
+        </div>
+        <div
+          class="pillText pillContentArea"
+        >
+          test-weapon
+        </div>
+      </div>
+      <div
+        class="pillContainer"
+      >
+        <div
+          class="pillText pillTitleArea"
+        >
+          HAIR
+        </div>
+        <div
+          class="pillText pillContentArea"
+        >
+          test-hair
+        </div>
+      </div>
+      <div
+        class="pillContainer"
+      >
+        <div
+          class="pillText pillTitleArea"
+        >
+          FIRST SEEN
+        </div>
+        <div
+          class="pillText pillContentArea"
+        >
+          test-first
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`details presentational component snapshots detail pill snapshot 1`] = `
+<div>
+  <div
+    class="pillContainer"
+  >
+    <div
+      class="pillText pillTitleArea"
+    >
+      TEST-TITLE
+    </div>
+    <div
+      class="pillText pillContentArea"
+    >
+      test-hair
+    </div>
+  </div>
+</div>
+`;

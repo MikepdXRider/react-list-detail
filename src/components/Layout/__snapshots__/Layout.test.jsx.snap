@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders layout component 1`] = `
+<div>
+  <header>
+    <h1>
+      Avatar
+    </h1>
+    <p>
+      The Last Airbender
+    </p>
+  </header>
+  <main />
+</div>
+`;
