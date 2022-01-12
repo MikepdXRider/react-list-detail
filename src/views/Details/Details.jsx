@@ -33,11 +33,9 @@ export default function Details() {
             {
                 isLoading
                 ? <Loader />
-                : <section>
-                    <DetailCard 
+                : <DetailCard 
                     {...character}
-                    />
-                </section>
+                />
             }        
         </>
     )
