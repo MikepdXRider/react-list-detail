@@ -5,9 +5,10 @@
 // Displays selected list item details.
 
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import DetailCard from '../../components/Details/DetailCard.jsx';
 import { getCharacterById } from '../../services/avatar.js';
+import styles from './Link.css'
 
 export default function Details() {
     const [character, setCharacter] = useState({});
@@ -27,6 +28,7 @@ export default function Details() {
 
     return (
         <>
+            <Link className={styles.link} to='/'>Back to List</Link>
             {
                 isLoading
                 ? <h3>Loading...</h3>
