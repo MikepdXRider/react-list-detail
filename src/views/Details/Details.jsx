@@ -7,8 +7,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import DetailCard from '../../components/Details/DetailCard.jsx';
+import Loader from '../../components/Loader/Loader.jsx';
 import { getCharacterById } from '../../services/avatar.js';
-import styles from './Link.css'
+import styles from './Details.css';
 
 export default function Details() {
     const [character, setCharacter] = useState({});
@@ -31,7 +32,7 @@ export default function Details() {
             <Link className={styles.link} to='/'>Back to List</Link>
             {
                 isLoading
-                ? <h3>Loading...</h3>
+                ? <Loader />
                 : <section>
                     <DetailCard 
                     {...character}

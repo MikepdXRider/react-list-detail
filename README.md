@@ -1,5 +1,12 @@
 # List & Detail Lab
 
+## Credits
+- [Glassmorphia Generator](https://hype4.academy/tools/glassmorphism-generator)
+- [Google Fonts](https://fonts.google.com/)
+- [Gradient Generator](https://cssgradient.io/swatches/)
+- [responsive web with repeat, autofit, and grid](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)
+- [MDN clamp() docs](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp())
+
 ## Demo
 Note: Your app should look different, with your own styles applied, but the core functionality will be the same.
 

@@ -8,6 +8,7 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import ListItem from '../../components/ListItem/ListItem.jsx';
+import Loader from '../../components/Loader/Loader.jsx';
 import { getCharacters } from '../../services/avatar.js';
 
 export default function List() {
@@ -37,7 +38,7 @@ export default function List() {
         <>
             {
                 isLoading
-                ? <h3>Loading...</h3>
+                ? <Loader />
                 : <ul>
                     {
                         characters.map(character => 
