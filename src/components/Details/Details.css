@@ -1,0 +1,76 @@
+.cardContainer{
+    width: 500px;
+}
+
+
+.pillContainer{
+    height: 50px;
+    width: clamp(280px, 90%, 450px);
+    /* width: 280px; */
+    
+    font-family: 'Coming Soon', cursive;
+
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.pillTitleArea{
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pillContentArea{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pillText{
+    color: white;
+}
+
+.detailsImage{
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 5px;
+    width: clamp(280px, 90%, 450px);
+    /* width: 280px; */
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.detailsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.detailsContChild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 250px;
+}

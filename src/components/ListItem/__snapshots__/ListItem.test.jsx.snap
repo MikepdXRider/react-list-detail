@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ListItem component 1`] = `
+<div>
+  <article
+    class="container"
+  >
+    <img
+      alt="test-name"
+      src="test-photo"
+    />
+    <div>
+      <p
+        class="cardTitle"
+      >
+        test-name
+      </p>
+      <p
+        class="cardAff"
+      >
+        test-aff... 
+        <span>
+          see more
+        </span>
+      </p>
+    </div>
+  </article>
+</div>
+`;

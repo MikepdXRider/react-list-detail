@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders loading component 1`] = `
+<div>
+  <article
+    class="loaderContainer"
+  >
+    <p
+      class="loader"
+    >
+      Loading...
+    </p>
+  </article>
+</div>
+`;

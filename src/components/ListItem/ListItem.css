@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.container {
+    width: 280px;
+    max-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    border-radius: 10px;
+    /* animation: wipe-enter 1s; */
+
+    color: white;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container img{
+    grid-row: 1;
+    width: 278px;
+    height: 225px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardTitle{
+    font-family: 'Pangolin', cursive;
+}
+
+.container div{
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5px;
+}
+
+.container span{
+    color: purple;
+}
+
+.cardAff{
+    font-family: 'Coming Soon', cursive;
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+.container:hover{
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
